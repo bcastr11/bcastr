@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+
+</head>
+
+  <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mods.html">Modifcations</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h1>Minecraft</h1>
+        <p>
+        Minecraft is a popular video game where you explore and build in a blocky world. You can play in different modes like Survival, where you gather resources, craft tools, and build shelters to stay safe from monsters. In Creative mode, you have unlimited resources to build whatever you want. You can craft items, build houses, and mine materials like wood and stone. The game has various landscapes like forests and mountains. Minecraft is all about being creative, solving problems, and having fun. It's a game that lets you use your imagination to build amazing things and go on adventures in a virtual world made of blocks.</p>
+        <img src="Minecraft.jpg" alt="Sample Image">
+        <form id="minecraftForm" action="#" method="post">
+            
+        <!-- Web Form -->
+        <form id="minecraftForm" action="#" method="post">
+            <!-- Fieldset with multiple field sets -->
+            <fieldset>
+                <legend>Player Information</legend>
+                <!-- Text input -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <!-- Date/time input -->
+                <label for="DWF">Date Website Found:</label>
+                <input type="datetime-local" id="DWF" name="DWF">
+                <!-- Radio buttons -->
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <!-- Spinner input (number) -->
+                <label for="level">Level:</label>
+                <input type="number" id="level" name="level" min="1" max="100">
+                <!-- Range slider input -->
+                <label for="experience">Experience:</label>
+                <input type="range" id="experience" name="experience" min="0" max="100">
+                <!-- Checkboxes -->
+                <label for="achievements">Achievements:</label>
+                <input type="checkbox" id="achievement1" name="achievements" value="achievement1">
+                <label for="achievement1">Defeated Ender Dragon</label>
+                <input type="checkbox" id="achievement2" name="achievements" value="achievement2">
+                <label for="achievement2">Defeated Wither</label>
+                <!-- Selection list -->
+                <label for="biome">|Favorite Biome:</label>
+                <select id="biome" name="biome">
+                    <option value="forest">Forest</option>
+                    <option value="mountain">Mountain</option>
+                    <option value="ocean">Ocean</option>
+                </select>
+                <!-- Textarea -->
+                <label for="description">Describe Your World:</label>
+                <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                <!-- Input with mobile keyboard type (number) -->
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="0" max="150" required>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!-- Email input -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <!-- Phone number input with pattern -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                <!-- Checkbox input -->
+                <label for="newsletter">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                <label for="newsletter">Yes, please!</label>
+            </fieldset>
+            <!-- Submit and cancel/reset buttons -->
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </form>
+    </section>
+      
+      <!-- JavaScript for Countdown -->
+      <script src="script.js"></script>
+      <script>
+          countdown();
+          // showAlert();
+          // useMathMethod();
+          // delayCommand();
+          // trackDayAndTime();
+          // convertNumberToText();
+
+      </script>
+</body>
+</html>
